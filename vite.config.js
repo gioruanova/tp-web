@@ -9,6 +9,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         nested: resolve('src/pages', 'contact.html'),
         nested2: resolve('src/pages', 'About.html'),
+        nested3: resolve('src/pages', 'Products.html'),
       },
     },
   },
