@@ -12,7 +12,7 @@ import widget_e from './public/js/widgets/widget_e.js'
 import './public/js/default.js';
 
 
-document.querySelector('#app').innerHTML = ``
+// document.querySelector('#app').innerHTML = ``
 
 
 if (window.location.pathname === '/') {
