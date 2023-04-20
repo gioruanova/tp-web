@@ -1,0 +1,10 @@
+body {
+    background-color: $darkBgColor;
+
+
+}
+
+
+body.lightMode {
+    background-color: $lightBgColor;
+}

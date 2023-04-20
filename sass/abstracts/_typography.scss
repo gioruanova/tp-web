@@ -1,0 +1,139 @@
+// TYPOGRAPHY SETTINGS
+$baseFontSize: 16px;
+$fontColor: $white;
+$fontColorDark: $darkBgColor;
+$defaultFontFamily: $mainFont;
+$headingFontFamily: $headingFontFamily;
+$defaultFontWeight: 300;
+$headingFontWeight: 700;
+
+
+// h1 - h3 font-sizes (value only, no 'px')
+$h1-fontsize: px-to-rem(30);
+$h2-fontsize: px-to-rem(28);
+$h3-fontsize: px-to-rem(22);
+
+body {
+    font-size: 2rem;
+    font-family: $defaultFontFamily;
+    color: $fontColor;
+    transition: $deafaultTransition;
+}
+
+p {
+    color: $fontColor;
+    text-decoration: none;
+    margin: 0;
+    font: #{$baseFontSize}/1.5 $defaultFontFamily;
+    font-weight: $defaultFontWeight;
+    transition: $deafaultTransition;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+        font-weight: $defaultFontWeight + 200;
+    }
+}
+
+b {
+    color: $fontColor;
+    text-decoration: none;
+    margin: 0;
+    font: #{$baseFontSize}/1.5 $defaultFontFamily;
+    font-weight: 900;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+    }
+}
+
+strong {
+    color: $fontColor;
+    text-decoration: none;
+    margin: 0;
+    font: #{$baseFontSize}/1.5 $defaultFontFamily;
+    font-weight: 700;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+    }
+}
+
+em {
+    color: $fontColor;
+    text-decoration: none;
+    margin: 0;
+    font: #{$baseFontSize}/1.5 $defaultFontFamily;
+    font-weight: $defaultFontWeight;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+        font-weight: $defaultFontWeight + 200;
+    }
+}
+
+a {
+    color: $fontColor;
+    text-decoration: none;
+    margin: 0;
+    font: #{$baseFontSize}/1.5 $defaultFontFamily;
+    font-weight: $defaultFontWeight;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+        font-weight: $defaultFontWeight + 200;
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $fontColor;
+    text-decoration: none;
+    font-weight: $headingFontWeight;
+    margin: 0;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+    }
+}
+
+
+h1 {
+    font-size: clamp(1.80rem, calc(1.41rem + 1.39vw), $h1-fontsize);
+    font-weight: $headingFontFamily;
+}
+
+h2 {
+    font-size: clamp(1.60rem, calc(1.33rem + 0.96vw), $h2-fontsize);
+    font-weight: $headingFontFamily;
+}
+
+h3 {
+    font-size: clamp(1.42rem, calc(1.25rem + 0.62vw), $h3-fontsize);
+    font-weight: $headingFontFamily;
+}
+
+h4 {
+    font-size: clamp(1.27rem, calc(1.17rem + 0.35vw), 1.44rem);
+    font-weight: $headingFontFamily;
+}
+
+h5 {
+    font-size: clamp(1.13rem, calc(1.08rem + 0.15vw), 1.20rem);
+    font-weight: $headingFontFamily;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: $headingFontFamily;
+}
