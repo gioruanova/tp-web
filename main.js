@@ -23,6 +23,7 @@ if (window.location.pathname === '/') {
         widget_d();
         widget_e();
         $('.testing-class').addClass('background-change')
+        $('body').addClass('homepage')
     })
 }
 

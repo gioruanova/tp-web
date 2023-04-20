@@ -10,7 +10,6 @@ nav {
     width: 95%;
 
     @media screen and (max-width:600px) {
-        
         top: 1rem;
     }
 }
@@ -20,9 +19,18 @@ nav {
     color: #000000;
     border-radius: 30px;
     padding: 0 5px;
-    width: 5rem;
+    width: 8rem;
     text-align: center;
-    font-size: 15px;
+    font-size: 30px;
+    
+    transition: $deafaultTransition;
+
+    .scrollClass & {
+        transition: $deafaultTransition;
+        font-size: 15px;
+        width: 5rem;
+        
+    }
 }
 
 .nav-container {
