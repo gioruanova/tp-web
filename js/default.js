@@ -32,3 +32,16 @@ $(document).ready(function () {
         }
     })
 });
+
+
+// Burger Button
+$(document).ready(function () {
+
+    $('#burger-button').on('click', function () {
+        $(this).toggleClass('menu-open')
+        let buttonBurger = $('#burger-button')
+        $('.items').toggleClass('showItems')
+        $('.container-nav').toggleClass('full-width')
+    })
+
+})

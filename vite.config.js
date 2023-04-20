@@ -10,6 +10,7 @@ export default defineConfig({
         nested: resolve('pages', 'Contact.html'),
         nested2: resolve('pages', 'About.html'),
         nested3: resolve('pages', 'Products.html'),
+        nested4: resolve('pages', 'Login.html'),
       },
     },
   },

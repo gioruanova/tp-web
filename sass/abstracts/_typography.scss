@@ -80,7 +80,10 @@ a {
     text-decoration: none;
     margin: 0;
     font: #{$baseFontSize}/1.5 $defaultFontFamily;
-    font-weight: $defaultFontWeight;
+    font-weight: $defaultFontWeight + 200;
+    &:hover{
+        text-decoration: underline;
+    }
 
     .lightMode & {
         color: $fontColorDark;
