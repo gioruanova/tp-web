@@ -51,8 +51,10 @@ $(document).ready(function () {
 window.addEventListener("scroll", function () {
     let windowPosition = (window.pageYOffset * 100) / (document.body.scrollHeight - window.innerHeight)
     if (windowPosition > 5) {
-        document.body.classList.add('scrollClass');
+        // document.body.classList.add('scrollClass');
+        $('body').attr('id','scrollClass')
     } else {
         document.body.classList.remove('scrollClass');
+        $('body').removeAttr('id')
     }
 });

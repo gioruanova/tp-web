@@ -18,12 +18,26 @@ body.lightMode {
 .content {
     max-width: 1400px;
     width: 95%;
+    padding: 2rem 0;
+    text-align: center;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+        font-weight: 400;
+    }
+
 }
 
 .content-subpage {
     max-width: 1400px;
     width: 95%;
     padding-top: 10rem;
+
+
 }
 
 
@@ -37,4 +51,13 @@ body.lightMode {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
 }

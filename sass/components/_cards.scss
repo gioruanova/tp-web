@@ -1,0 +1,22 @@
+.mainCard {
+    margin: 5px;
+    background-color: red;
+    max-width: 300px;
+    border-radius: 10px;
+    
+
+    .card-content{
+        margin: 5px 10px 20px 10px;
+    }
+
+    .content-top{
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 17px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+}
