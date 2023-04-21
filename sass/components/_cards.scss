@@ -1,22 +1,37 @@
 .mainCard {
-    margin: 5px;
-    background-color: red;
+    margin: 10px;
     max-width: 300px;
     border-radius: 10px;
-    
+    overflow: hidden;
+    border: 2px solid $liveColor;
+    box-shadow: 4px 3px 5px -3px #605e5e;
+    transition: $deafaultTransition;
+    &:hover{
+        box-shadow: 4px 3px 5px 0px #605e5e;
+        transition: $deafaultTransition;
+    }
 
-    .card-content{
+
+    .card-content {
         margin: 5px 10px 20px 10px;
     }
 
-    .content-top{
-        h3{
+    .content-top {
+        h3 {
             font-size: 20px;
         }
-        p{
-            font-size: 17px;
+
+        p {
+            font-size: 15px;
             line-height: 18px;
-            margin-top: 5px;
+            margin: 5px 0;
+            font-weight: 400;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4; /* number of lines to show */
+                    line-clamp: 4; 
+            -webkit-box-orient: vertical;
+
         }
     }
 }

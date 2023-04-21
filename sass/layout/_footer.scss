@@ -1,0 +1,89 @@
+footer {
+    background-color: $darkBgColor;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+    border-top: 8px solid $white;
+
+    .footer-top-level {
+        max-width: 1400px;
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        justify-content: space-around;
+
+        @media screen and (max-width:730px) {
+            flex-direction: column;
+        }
+
+        .footer-logo {
+            width: 7rem;
+            height: 7rem;
+            background-color: lighten($darkBgColor, 20%);
+            font-size: 30px;
+            text-align: center;
+            color: $white;
+            border-radius: 50px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width:730px) {
+                margin-bottom: 2rem;
+            }
+
+        }
+
+        span {
+            width: 400px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 300;
+        }
+
+        margin-bottom: 2rem;
+    }
+
+    .footer-bottom-level {
+        background-color: lighten($darkBgColor, 10%);
+        width: 100%;
+        padding: 10px 0;
+
+        .copy-container {
+            max-width: 1400px;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin: auto;
+            justify-content: center;
+
+            @media screen and (max-width:730px) {
+                flex-direction: column;
+
+                span {
+                    &:nth-child(2) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            span {
+                width: 400px;
+                font-size: 15px;
+                font-weight: 300;
+                text-align: center;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
