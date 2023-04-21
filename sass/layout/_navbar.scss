@@ -10,7 +10,10 @@ nav {
     width: 95%;
 
     @media screen and (max-width:600px) {
-        top: 1rem;
+        top: 0;
+        padding: 10px 20px 0 20px;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.8855917366946778) 0%, rgba(57, 37, 33, 0) 100%);
     }
 }
 
@@ -22,14 +25,24 @@ nav {
     width: 8rem;
     text-align: center;
     font-size: 30px;
-    
     transition: $deafaultTransition;
 
     #scrollClass & {
         transition: $deafaultTransition;
         font-size: 15px;
         width: 5rem;
-        
+    }
+
+    @media screen and (max-width:600px) {
+        transition: $deafaultTransition;
+        font-size: 25px;
+        width: 7rem;
+
+        #scrollClass & {
+            transition: $deafaultTransition;
+            font-size: 20px;
+            width: 6rem;
+        }
     }
 }
 
@@ -46,7 +59,7 @@ nav {
     box-sizing: border-box;
     overflow: hidden;
 
-    @media screen and (max-width:700px) {
+    @media screen and (max-width:600px) {
         flex-direction: column-reverse;
         align-items: flex-end
     }

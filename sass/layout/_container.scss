@@ -93,6 +93,16 @@ body.lightMode {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: $deafaultTransition;
+    justify-content: center;
+    text-align: center;
+
+
+    @media screen and (max-width:600px) {
+        height: 30vh;
+        transition: $deafaultTransition;
+        padding-top: 1rem;
+    }
 }
 
 
