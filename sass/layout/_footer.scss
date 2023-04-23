@@ -79,9 +79,16 @@ footer {
                 font-size: 15px;
                 font-weight: 300;
                 text-align: center;
+                .lightMode & {
+                    color: $white;
+                }
 
                 a {
                     color: $white;
+
+                    .lightMode & {
+                        color: $white;
+                    }
                 }
             }
         }
