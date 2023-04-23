@@ -11,6 +11,7 @@ export default defineConfig({
         nested2: resolve('pages', 'About.html'),
         nested3: resolve('pages', 'Products.html'),
         nested4: resolve('pages', 'Login.html'),
+        nested5: resolve(__dirname, '404.html'),
       },
     },
   },
