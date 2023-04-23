@@ -77,9 +77,13 @@ body.lightMode {
 .content-subpage {
     max-width: 1400px;
     width: 95%;
-    padding-top: 10rem;
+    padding-top: 8rem;
     text-align: center;
     height: 40rem;
+
+    h1 {
+        font-size: 30px;
+    }
 }
 
 // Sections
@@ -196,6 +200,104 @@ body.lightMode {
         .button {
             width: 100%;
             margin: 10px 0 0 0;
+        }
+    }
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+
+    input {
+        width: 99%;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .button {
+        margin: 10px 0;
+    }
+
+    label {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .check-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 15px;
+        }
+    }
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    textarea {
+        width: 99%;
+        height: 25px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    textarea {
+        resize: none;
+        height: 100px;
+    }
+
+    select,
+    option {
+        border: none;
+        border-radius: 5px;
+    }
+
+    .button {
+        margin: 0;
+        width: 100%;
+    }
+
+    label {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .check-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        input {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 15px;
         }
     }
 }

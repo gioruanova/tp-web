@@ -81,7 +81,8 @@ a {
     margin: 0;
     font: #{$baseFontSize}/1.5 $defaultFontFamily;
     font-weight: $defaultFontWeight + 200;
-    &:hover{
+
+    &:hover {
         text-decoration: underline;
     }
 
@@ -92,6 +93,15 @@ a {
     }
 }
 
+label,
+span {
+    transition: $deafaultTransition;
+
+    .lightMode & {
+        color: $fontColorDark;
+        transition: $deafaultTransition;
+    }
+}
 
 h1,
 h2,
@@ -140,4 +150,3 @@ h6 {
     font-size: 1rem;
     font-weight: $headingFontWeight;
 }
-

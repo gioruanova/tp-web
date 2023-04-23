@@ -10,9 +10,11 @@
 </head>
 
 <body>
-   <!-- NAVBAR SECTION -->
-   <nav>
-    <a href="/"><div class="great-logo">GREAT LOGO</div></a>
+  <!-- NAVBAR SECTION -->
+  <nav>
+    <a href="/">
+      <div class="great-logo">GREAT LOGO</div>
+    </a>
     <div class="nav-container">
       <div class="blur-effect"></div>
       <div class="items">
@@ -39,7 +41,42 @@
 
   <section class="content-subpage" id="topPage">
 
-    <h1>Content under construction</h1>
+    <h1>Contact area:</h1>
+
+    <form onsubmit="return false;" class="contact-form">
+      <div class="contact-section">
+        <label>Nombre de contacto:</label>
+        <input type="text" name="username" required>
+      </div>
+
+      <div class="contact-section">
+        <label>E-mail de contacto: </label>
+        <input type="email" name="email" required>
+      </div>
+
+      <div class="contact-section">
+        <label>Tipo de consulta:</label>
+        <select id="consulta" name="consultas">
+          <option value="Ventas">Ventas</option>
+          <option value="Service">Service</option>
+          <option value="Repuetos">Repuetos</option>
+          <option value="Consulta">Consulta</option>
+        </select>
+      </div>
+
+      <div class="contact-section">
+        <label>Mensaje:</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+
+      <div class="button-warp">
+        <button type="reset" class="button">Limpiar formulario</button>
+        <button type="button" class="button">Enviar</button>
+      </div>
+
+
+
+    </form>
 
   </section>
 
@@ -60,23 +97,24 @@
 
   </div>
   <!-- After content Banner -->
-<!-- Footer -->
-<footer>
-  <div class="footer-top-level">
-    <a href="#topPage">
-      <div class="footer-logo">GREAT LOGO</div>
-    </a>
-    <span>Text about some services, products or any related to the site, that currently was not decided.Text about some services, products or any related to the site, that currently was not decided.</span>
-  </div>
-  <div class="footer-bottom-level">
-    <div class="copy-container">
-      <span>Copyright ©2023, THIS BRAND.
-        All Rights Reserved.</span>
-      <span>Developed by <a href="https://www.giorgioruanova.com/" target="bla
-  ">Giorgio Ruanova</a></span>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top-level">
+      <a href="#topPage">
+        <div class="footer-logo">GREAT LOGO</div>
+      </a>
+      <span>Text about some services, products or any related to the site, that currently was not decided.Text about
+        some services, products or any related to the site, that currently was not decided.</span>
     </div>
-  </div>
-</footer>
+    <div class="footer-bottom-level">
+      <div class="copy-container">
+        <span>Copyright ©2023, THIS BRAND.
+          All Rights Reserved.</span>
+        <span>Developed by <a href="https://www.giorgioruanova.com/" target="bla
+  ">Giorgio Ruanova</a></span>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="../main.js"></script>
 </body>

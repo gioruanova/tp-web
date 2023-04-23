@@ -12,7 +12,9 @@
 <body>
   <!-- NAVBAR SECTION -->
   <nav>
-    <a href="/"><div class="great-logo">GREAT LOGO</div></a>
+    <a href="/">
+      <div class="great-logo">GREAT LOGO</div>
+    </a>
     <div class="nav-container">
       <div class="blur-effect"></div>
       <div class="items">
@@ -38,7 +40,22 @@
 
   <section class="content-subpage" id="topPage">
 
-    <h1>Content under construction</h1>
+    <h1>Area Clientes</h1>
+
+    <form class="login-form" onsubmit="return false;">
+      <label>Username : </label>
+      <input type="text" name="username" required>
+      <label>Password : </label>
+      <input type="password" name="password" required>
+      <button type="submit" class="button">Login</button>
+      <div class="check-text">
+        <input type="checkbox" checked="checked">
+        <span>Remember me</span>
+      </div>
+      <button type="button" class="button"> Cancel</button>
+      <a href="#">Lost password? </a>
+
+    </form>
 
   </section>
   <!-- After content Banner -->
@@ -59,23 +76,24 @@
   </div>
   <!-- After content Banner -->
 
-<!-- Footer -->
-<footer>
-  <div class="footer-top-level">
-    <a href="#topPage">
-      <div class="footer-logo">GREAT LOGO</div>
-    </a>
-    <span>Text about some services, products or any related to the site, that currently was not decided.Text about some services, products or any related to the site, that currently was not decided.</span>
-  </div>
-  <div class="footer-bottom-level">
-    <div class="copy-container">
-      <span>Copyright ©2023, THIS BRAND.
-        All Rights Reserved.</span>
-      <span>Developed by <a href="https://www.giorgioruanova.com/" target="bla
-  ">Giorgio Ruanova</a></span>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-top-level">
+      <a href="#topPage">
+        <div class="footer-logo">GREAT LOGO</div>
+      </a>
+      <span>Text about some services, products or any related to the site, that currently was not decided.Text about
+        some services, products or any related to the site, that currently was not decided.</span>
     </div>
-  </div>
-</footer>
+    <div class="footer-bottom-level">
+      <div class="copy-container">
+        <span>Copyright ©2023, THIS BRAND.
+          All Rights Reserved.</span>
+        <span>Developed by <a href="https://www.giorgioruanova.com/" target="bla
+  ">Giorgio Ruanova</a></span>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="../main.js"></script>
 </body>
