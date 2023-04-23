@@ -42,7 +42,7 @@
 
     <h1>Area Clientes</h1>
 
-    <form class="login-form" method="post" >
+    <form class="login-form" onsubmit="return false;">
       <label>Usuario: </label>
       <input type="text" name="usuario" required>
       <label>Contraseña: </label>
@@ -59,7 +59,7 @@
     <div class="new-user">
 
       <h2>Nuevo usuario?</h2>
-      <form class="create-user-form" method="post" >
+      <form class="create-user-form" onsubmit="return false;">
 
         <div class="two-lines">
           <div class="contact-section">
@@ -109,10 +109,10 @@
         <img class="img-form" src="/images/sign-up.jpg" alt="Sign up for amazing updates!">
         <h4>Titulo Sobre beneficios Sign Up</h4>
       </div>
-      <form method="post"  class="signup-form">
+      <form method="post" data-netlify="true" class="signup-form">
         <p>Text about some services, products or any related to the site, that currently was not decided.</p>
-        <input type="text" placeholder="Enter email:" value="">
-        <button class="button">Sign Up!</button>
+        <input name="email" type="text" placeholder="Enter email:" value="">
+        <button type="submit" class="button">Sign Up!</button>
       </form>
     </div>
 
