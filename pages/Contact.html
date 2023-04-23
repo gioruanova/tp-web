@@ -44,9 +44,28 @@
     <h1>Contact area:</h1>
 
     <form onsubmit="return false;" class="contact-form">
-      <div class="contact-section">
-        <label>Nombre de contacto:</label>
-        <input type="text" name="username" required>
+
+      <div class="two-lines">
+        <div class="contact-section">
+          <label>Nombre:</label>
+          <input type="text" name="nombre" required>
+        </div>
+        <div class="contact-section">
+          <label>Apellido:</label>
+          <input type="text" name="apellido" required>
+        </div>
+      </div>
+
+
+      <div class="two-lines">
+        <div class="contact-section">
+          <label>Prefijo:</label>
+          <input type="number" name="phone1" required>
+        </div>
+        <div class="contact-section">
+          <label>Numero de contacto:</label>
+          <input type="tel" name="phone2" required>
+        </div>
       </div>
 
       <div class="contact-section">
@@ -56,7 +75,8 @@
 
       <div class="contact-section">
         <label>Tipo de consulta:</label>
-        <select id="consulta" name="consultas">
+        <select id="consulta" name="categoria">
+          <option value="Ventas" selected></option>
           <option value="Ventas">Ventas</option>
           <option value="Service">Service</option>
           <option value="Repuetos">Repuetos</option>
@@ -66,12 +86,12 @@
 
       <div class="contact-section">
         <label>Mensaje:</label>
-        <textarea id="message" name="message"></textarea>
+        <textarea id="message" name="mensaje"></textarea>
       </div>
 
       <div class="button-warp">
         <button type="reset" class="button">Limpiar formulario</button>
-        <button type="button" class="button">Enviar</button>
+        <button type="submit" class="button">Enviar</button>
       </div>
 
 

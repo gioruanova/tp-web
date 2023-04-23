@@ -43,19 +43,62 @@
     <h1>Area Clientes</h1>
 
     <form class="login-form" onsubmit="return false;">
-      <label>Username : </label>
-      <input type="text" name="username" required>
-      <label>Password : </label>
-      <input type="password" name="password" required>
+      <label>Usuario: </label>
+      <input type="text" name="usuario" required>
+      <label>Contraseña: </label>
+      <input type="password" name="contraseña" required>
       <button type="submit" class="button">Login</button>
       <div class="check-text">
         <input type="checkbox" checked="checked">
         <span>Remember me</span>
       </div>
-      <button type="button" class="button"> Cancel</button>
       <a href="#">Lost password? </a>
-
     </form>
+
+
+    <div class="new-user">
+
+      <h2>Nuevo usuario?</h2>
+      <form class="create-user-form" onsubmit="return false;">
+
+        <div class="two-lines">
+          <div class="contact-section">
+            <label>Nombre:</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="contact-section">
+            <label>Apellido:</label>
+            <input type="text" name="apellido" required>
+          </div>
+        </div>
+
+        <div class="contact-section">
+          <label>E-mail: </label>
+          <input type="email" name="email" required>
+        </div>
+
+        <div>
+          <div class="contact-section">
+            <label>Usuario: </label>
+            <input type="text" name="user" required>
+          </div>
+        </div>
+
+        <div class="two-lines">
+          <div class="contact-section">
+            <label>Contraseña</label>
+            <input type="password" name="password1" required>
+          </div>
+          <div class="contact-section">
+            <label>Repetir contraseña</label>
+            <input type="password" name="password2" required>
+          </div>
+        </div>
+        <div class="button-warp">
+          <button type="submit" class="button">Enviar</button>
+        </div>
+      </form>
+    </div>
 
   </section>
   <!-- After content Banner -->
