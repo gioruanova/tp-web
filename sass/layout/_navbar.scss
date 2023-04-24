@@ -40,6 +40,7 @@ header {
         transition: $deafaultTransition;
         font-size: 25px;
         width: 7rem;
+        top: auto;
 
         #scrollClass & {
             transition: $deafaultTransition;
