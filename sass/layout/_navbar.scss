@@ -1,11 +1,11 @@
 // Navbar
-nav {
+header {
     position: fixed;
     top: 2rem;
     z-index: 9999;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     max-width: 1400px;
     width: 95%;
 
@@ -18,6 +18,8 @@ nav {
 }
 
 .great-logo {
+    position: absolute;
+    left: 1rem;
     background-color: cyan;
     color: #000000;
     border-radius: 30px;
@@ -46,7 +48,7 @@ nav {
     }
 }
 
-.nav-container {
+nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -79,7 +81,7 @@ nav {
     }
 }
 
-nav .items {
+header .items {
     display: flex;
     align-items: center;
     width: 0;
@@ -113,7 +115,7 @@ nav .items {
     }
 }
 
-nav {
+header {
     .showItems {
         transition: $deafaultTransition;
         width: 26rem;
