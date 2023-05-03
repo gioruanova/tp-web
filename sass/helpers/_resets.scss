@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     transition: $deafaultTransition;
+    z-index: 99999;
 
     &:hover {
         transition: $deafaultTransition;

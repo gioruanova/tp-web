@@ -167,11 +167,11 @@ body.lightMode {
     background-image: url("../images/banner-2.jpg");
     width: 100%;
     height: 55vw;
-    border-top: 1px solid $lightBgColor;
+    
     border-bottom: 1px solid $lightBgColor;
 
     .lightMode & {
-        border-top: 1px solid $darkBgColor;
+    
         border-bottom: 1px solid $darkBgColor;
     }
 }
@@ -301,6 +301,11 @@ body.lightMode {
             }
         }
 
+    }
+    .vintageImage{
+        img{
+            filter: sepia(0.5);
+        }
     }
 
     @media screen and (max-width:980px) {

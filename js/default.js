@@ -1,7 +1,7 @@
 import $ from "jquery";
 
 
-console.log("default Widget");
+// console.log("default Widget");
 
 // Theme Selector
 $(document).ready(function () {
