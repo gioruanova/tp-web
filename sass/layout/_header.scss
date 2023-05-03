@@ -1,0 +1,392 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+
+    .glass-effect {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        /* From https://css.glass */
+        background: rgba(63, 63, 63, 0.16);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.4px);
+        -webkit-backdrop-filter: blur(7.4px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        transition: $deafaultTransition;
+
+        @media screen and (max-width:700px) {
+            display: none;
+        }
+
+        #scrollClass & {
+            transition: $deafaultTransition;
+            background: rgba(63, 63, 63, 0.493);
+        }
+
+    }
+
+    nav {
+        max-width: 1400px;
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        position: relative;
+        padding: 20px 0;
+        transition: $deafaultTransition;
+
+        @media screen and (max-width:700px) {
+            display: none;
+        }
+
+        #scrollClass & {
+            transition: $deafaultTransition;
+            padding: 10px 0;
+        }
+
+
+
+
+
+        .items {
+            display: flex;
+            align-items: center;
+            z-index: 9;
+
+            .nav-items {
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin: 0 10px;
+                    color: $white;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    text-shadow: 1px 2px 5px $lightBgColor;
+                    transition: $deafaultTransition;
+
+                    .lightMode & {
+                        transition: $deafaultTransition;
+                        text-shadow: 1px 2px 2px $darkBgColor;
+                    }
+
+                    &::after {
+                        content: "";
+                        background-color: $white;
+                        display: flex;
+                        width: 0;
+                        height: 1px;
+                        left: 0;
+                        transition: $deafaultTransition;
+                    }
+
+                    &:hover {
+                        transition: $deafaultTransition;
+                        text-decoration: none;
+                        color: lighten($liveColor, 30%);
+
+                        &::after {
+                            transition: $deafaultTransition;
+                            width: 100%;
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+
+
+    }
+}
+
+.panel-section {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+
+    .login-icon {
+        line-height: 10px;
+        margin-right: 30px;
+
+        @media screen and (max-width: 700px) {
+            margin-right: 0;
+        }
+
+    }
+
+    svg {
+        fill: $white;
+        width: 20px;
+        height: 20px;
+        transition: $deafaultTransition;
+
+        &:hover {
+            transition: $deafaultTransition;
+            fill: lighten($liveColor, 30%);
+        }
+    }
+
+    .light-mode {
+        fill: $darkBgColorAlternative;
+
+        .lightMode & {
+            fill: transparent;
+        }
+    }
+}
+
+.class-logo {
+    z-index: 9;
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+    transition: $deafaultTransition;
+
+    &:hover {
+        filter: drop-shadow(2px 4px 6px $white);
+        transition: $deafaultTransition;
+
+    }
+
+
+    #scrollClass & {
+        transition: $deafaultTransition;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+////////////////////////////
+/// MOBILE NAV
+
+.mobile-nav {
+    display: none;
+
+    @media screen and (max-width:700px) {
+        padding: 10px;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 97%;
+        z-index: 999;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4990371148459384) 55%, rgba(255, 255, 255, 0) 100%);
+    }
+}
+
+
+// Burger Button
+.burger-container {
+    margin: 0 10px;
+    border-radius: 100%;
+    background-color: $white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid $darkBgColorAlternative;
+    transition: $deafaultTransition;
+
+    &:hover {
+        background-color: $darkBgColorAlternative;
+        border: 2px solid $white;
+
+        div {
+            background-color: $white;
+        }
+    }
+
+    .lightMode & {
+        border: 2px solid $white;
+        background-color: $darkBgColorAlternative;
+        transition: $deafaultTransition;
+
+        &:hover {
+            background-color: $white;
+            border: 2px solid $darkBgColorAlternative;
+
+            div {
+                background-color: $darkBgColorAlternative;
+            }
+        }
+    }
+
+    div {
+        height: 3px;
+        border-radius: 20px;
+        width: 22px;
+        background-color: $darkBgColorAlternative;
+        margin: 2px 0;
+        transition: $deafaultTransition;
+
+        .lightMode & {
+            background-color: $white;
+            transition: $deafaultTransition;
+        }
+    }
+}
+
+.menu-open {
+    div {
+        &:nth-child(1) {
+            transform: rotate(45deg);
+            position: absolute;
+            transition: $deafaultTransition;
+        }
+
+        &:nth-child(2) {
+            transform: rotate(-45deg);
+            position: absolute;
+            transition: $deafaultTransition;
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
+            position: absolute;
+            transition: $deafaultTransition;
+        }
+    }
+}
+
+.mobile-selectors {
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu-mobile {
+    transition: $deafaultTransition;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 50rem;
+
+    .lightMode & {
+        background: rgba(201, 201, 201, 0.644);
+    }
+
+
+
+    nav {
+        display: flex !important;
+
+    }
+
+
+    .glass-effect-mobile {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        /* From https://css.glass */
+        background: rgba(63, 63, 63, 0.16);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(8.4px);
+        -webkit-backdrop-filter: blur(8.4px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+        transition: $deafaultTransition;
+        transform: rotate(0) !important;
+    }
+}
+
+.menu-open {
+    left: 0;
+    transition: $deafaultTransition;
+}
+
+.mobile-menu {
+    transform: rotate(0) !important;
+    z-index: 999;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 5rem;
+
+    a {
+        margin: 10px 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 700;
+        transition: $deafaultTransition;
+
+    }
+
+    .panel-section {
+        transform: rotate(0);
+        position: relative;
+        margin-left: 0;
+        z-index: 9999;
+    }
+
+    .login-icon {
+        svg {
+            width: 20px;
+            height: 20px;
+            fill: $white;
+            transition: $deafaultTransition;
+
+            .lightMode & {
+                transition: $deafaultTransition;
+                fill: $fontColorDark;
+
+            }
+        }
+    }
+
+}
+
+.activeClass {
+    background-color: $black;
+    color: $white !important;
+    padding: 0 8px;
+    border-radius: 30px;
+    cursor: default;
+
+
+
+    &::after {
+        width: 0;
+    }
+
+    &:hover {
+        text-decoration: none !important;
+
+        &::after {
+            width: 0 !important;
+
+
+        }
+    }
+}
+
+.activeClass.login-icon {
+    background-color: transparent;
+
+    svg {
+        &:hover {
+            fill: $white;
+        }
+    }
+}

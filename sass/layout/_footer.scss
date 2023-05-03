@@ -13,9 +13,10 @@ footer {
         width: 95%;
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         margin: auto;
         justify-content: space-around;
+        margin-bottom: 1rem;
 
         span {
             .lightMode & {
@@ -28,17 +29,20 @@ footer {
         }
 
         .footer-logo {
-            width: 7rem;
-            height: 7rem;
-            background-color: lighten($darkBgColor, 20%);
-            font-size: 30px;
-            text-align: center;
-            color: $white;
-            border-radius: 50px;
-            padding: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            background-image: url("../images/logo.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 5rem;
+            height: 5rem;
+            transition: $deafaultTransition;
+
+            &:hover {
+                filter: drop-shadow(2px 4px 6px $white);
+                transition: $deafaultTransition;
+            }
+
+
 
             @media screen and (max-width:730px) {
                 margin-bottom: 2rem;
@@ -48,12 +52,30 @@ footer {
 
         span {
             max-width: 400px;
-            text-align: center;
             font-size: 15px;
             font-weight: 300;
         }
 
-        margin-bottom: 2rem;
+        
+
+        .footer-cierre {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            align-items: flex-start;
+
+            @media screen and (max-width:700px) {
+                text-align: center;
+                align-items: center;
+            }
+
+            span {
+                &:nth-child(2) {
+                    margin-top: 10px;
+                    text-align: left;
+                }
+            }
+        }
     }
 
     .footer-bottom-level {
@@ -97,6 +119,28 @@ footer {
                         color: $white;
                     }
                 }
+            }
+        }
+    }
+
+    .redes {
+        margin: 10px 0;
+
+        a {
+            border-radius: 100%;
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        svg {
+            fill: $white;
+            width: 30px;
+            height: 30px;
+            transition: $deafaultTransition;
+
+            &:hover {
+                fill: lighten($liveColor, 30%);
+                transition: $deafaultTransition;
             }
         }
     }

@@ -6,9 +6,16 @@
     border: 2px solid $liveColor;
     box-shadow: 4px 3px 5px -3px #605e5e;
     transition: $deafaultTransition;
-    &:hover{
+
+    &:hover {
         box-shadow: 4px 3px 5px 0px #605e5e;
         transition: $deafaultTransition;
+    }
+
+    .img-card {
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
     }
 
 
@@ -28,10 +35,26 @@
             font-weight: 400;
             overflow: hidden;
             display: -webkit-box;
-            -webkit-line-clamp: 4; /* number of lines to show */
-                    line-clamp: 4; 
+            -webkit-line-clamp: 4;
+            /* number of lines to show */
+            line-clamp: 4;
             -webkit-box-orient: vertical;
 
         }
+    }
+}
+
+.horizontalCard {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    img{
+        width: 60%;
+        height: 250px;
+    }
+    .card-content{
+        max-width: 300px;
     }
 }

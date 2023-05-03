@@ -1,0 +1,26 @@
+
+.whapp-fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: $deafaultTransition;
+
+    &:hover {
+        transition: $deafaultTransition;
+        right: 25px;
+        transform: rotate(15deg);
+        bottom: 25px;
+        filter: drop-shadow(2px 2px 5px gray);
+    }
+
+    svg {
+        border-radius: 100%;
+        fill: $white;
+        width: 40px;
+        height: 40px;
+        background-color: #24cc63;
+        padding: 3px;
+    }
+}
