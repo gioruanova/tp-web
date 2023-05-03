@@ -141,6 +141,12 @@ body.lightMode {
     transition: $deafaultTransition;
     justify-content: center;
     text-align: center;
+    border-bottom: 1px solid $lightBgColor;
+
+    .lightMode & {
+
+        border-bottom: 1px solid $darkBgColor;
+    }
 
     a {
         margin-bottom: 2rem;
@@ -167,11 +173,9 @@ body.lightMode {
     background-image: url("../images/banner-2.jpg");
     width: 100%;
     height: 55vw;
-
     border-bottom: 1px solid $lightBgColor;
 
     .lightMode & {
-
         border-bottom: 1px solid $darkBgColor;
     }
 }
