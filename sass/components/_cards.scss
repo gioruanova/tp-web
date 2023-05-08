@@ -50,11 +50,25 @@
     max-width: 900px;
     display: flex;
     align-items: center;
-    img{
+
+    @media screen and (max-width:800px) {
+        flex-direction: column;
+
+        .card-content {
+            width: 100%;
+
+            .content-top {
+                text-align: center;
+            }
+        }
+    }
+
+    img {
         width: 60%;
         height: 250px;
     }
-    .card-content{
+
+    .card-content {
         max-width: 300px;
     }
 }
