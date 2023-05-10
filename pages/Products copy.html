@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leon Car - 30 Años Acercandote a tu Primer Auto</title>
-  <link rel="icon" type="image/x-icon" href="./public/images/favicon.ico">
+  <title>Leon Car - Vehiculos disponibles</title>
+  <link rel="icon" type="image/x-icon" href="../public/images/favicon.ico">
 </head>
 
 <body>
-  <!-- NAVBAR SECTION -->
 
+  <!-- NAVBAR SECTION -->
   <header>
     <div class="glass-effect"></div>
     <nav>
@@ -19,12 +19,12 @@
 
         <div class="nav-items">
           <a href="/">Inicio</a>
-          <a href="./pages/About.html">La empresa</a>
-          <a href="./pages/Products.html">Ventas</a>
-          <a href="./pages/Contact.html">Contacto</a>
+          <a href="./About.html">La empresa</a>
+          <a href="./Products.html" class="activeClass">Ventas</a>
+          <a href="./Contact.html">Contacto</a>
         </div>
         <div class="panel-section">
-          <a href="./pages/Login.html" title="Area Clientes" class="login-icon">
+          <a href="./Login.html" title="Area Clientes" class="login-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
@@ -70,10 +70,10 @@
         <div class="glass-effect-mobile"></div>
         <div class="mobile-menu">
           <a href="/">Inicio</a>
-          <a href="./pages/About.html">La empresa</a>
-          <a href="./pages/Products.html">Ventas</a>
-          <a href="./pages/Contact.html">Contacto</a>
-          <a href="./pages/Login.html" title="Area Clientes" class="login-icon">
+          <a href="./About.html">La empresa</a>
+          <a href="./Products.html" class="activeClass">Ventas</a>
+          <a href="./Contact.html">Contacto</a>
+          <a href="./Login.html" title="Area Clientes" class="login-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
               <path
                 d="M217.9 105.9L340.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L217.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1L32 320c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM352 416l64 0c17.7 0 32-14.3 32-32l0-256c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0c53 0 96 43 96 96l0 256c0 53-43 96-96 96l-64 0c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
@@ -86,67 +86,161 @@
   </header>
   <!-- NAVBAR SECTION -->
 
+  <div class="hero-banner middlePage animate__animated animate__zoomIn">
 
-  <!-- HERO BANNER -->
-  <div class="hero-banner animate__animated animate__slideInDown" id="topPage">
-    <a href="./pages/Products.html" class="button">Conocer mas</a>
   </div>
-  <!-- HERO BANNER -->
+  <div class="flex-container">
+    <!-- CARD COMP -->
+    <div class="mainCard horizontalCard">
+      <img class="img-card" src="/images/specil-card.jpeg" alt="Peugeot 208">
+      <div class="card-content">
+        <div class="content-top">
+          <h3>Peugeot 208 GTI - 2023</h3>
+          <p>Nuevo diseño</p>
+          <p>Automatico</p>
+          <p>Financiacion</p>
+          <p>Garantia extendida</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!-- Section 1 -->
-  <section class="content">
+  <section class="content-subpage paddingRemoved" id="topPage">
 
-    <div data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-once="true"
-      data-aos-anchor-placement="top-center" data-aos-delay="100">
-      <h1>Encuentra el auto perfecto para ti en LeonCar</h1>
-      <h2>Amplia selección de autos nuevos y usados de marcas confiables, financiamiento y servicio excepcional</h2>
-
-    </div>
-
-
-    <div class="flex-container" id="car-listing">
+    <h1>Vehiculos disponibles</h1>
+    <div class="flex-container">
       <!-- CARD COMP -->
-
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-1.jpg" alt="Peugeot 208">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>Peugeot 208</h3>
+            <p>Año: 2015 - Unico dueño</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-2.jpg" alt="Peugeot 308">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>Peugeot 308</h3>
+            <p>Año 2020 - Nafta</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-3.JPG" alt="VW Passat 2020">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>VW Passat</h3>
+            <p>Año 2020 - Nafta</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-4.JPG" alt="VW Gol 2022">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>VW Gol</h3>
+            <p>Año: 2022 - Diesel</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-5.JPG" alt="DS3 2012">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>Citroën DS 3 1.6</h3>
+            <p>Año: 2012 - Automatico</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-6.JPG" alt="Mini Cooper 2015">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>Mini Cooper </h3>
+            <p>Año: 2015 - Automatico</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-7.JPG" alt="Peugeot 308 Cabriolet ">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>Peugeot 308 Cabriolet</h3>
+            <p>Año 2016 - Automatico</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+      <!-- CARD COMP -->
+      <div class="mainCard">
+        <img class="img-card" src="/images/auto-8.JPG" alt="VW Golf">
+        <div class="card-content">
+          <div class="content-top">
+            <h3>VW Golf</h3>
+            <p>Año: 2017 - Nafta</p>
+          </div>
+          <div class="button-wrap">
+            <a href="/" class="button">Conocer mas</a>
+            <a href="/" class="button">Cotizar</a>
+          </div>
+        </div>
+      </div>
+      <!-- CARD COMP -->
+    </div>
   </section>
 
   <!-- Section 1 -->
-
-  <!-- Section 2 -->
-  <section class="contentFullWidth">
-    <div class="blur-effect"></div>
-    <div class="seo-block" data-aos="fade-left" data-aos-easing="ease-in-out" data-aos-duration="800"
-      data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
-      <h2>Selección, financiamiento y servicio excepcional.</h2>
-      <p> En LeonCar, nos apasiona ayudarte a encontrar el auto perfecto que se ajuste a tus necesidades y presupuesto.
-      </p>
-      <p>Contamos con una amplia selección de autos nuevos y usados de marcas reconocidas y confiables, que garantizan
-        tu satisfacción. Además, ofrecemos financiamiento y un equipo de expertos que te brindarán un servicio
-        excepcional desde el momento en que entras a nuestras instalaciones. Visítanos hoy y déjanos ayudarte a
-        encontrar tu próximo vehículo.</p>
-    </div>
-  </section>
-  <!-- Section 2 -->
-
-  <!-- Section 3 -->
-  <section class="content specialMargin">
-    <h2>No dude en consultar nuestros distintos servicios</h2>
-    <div class="flex-container" data-aos="fade-top" data-aos-easing="ease-in-out" data-aos-duration="800"
-      data-aos-once="true" data-aos-anchor-placement="bottom-bottom" data-aos-delay="300">
-      <a href="./pages/Products.html" class="hotButton">Garantia</a>
-      <a href="./pages/Contact.html" class="hotButton">Service</a>
-      <a href="./pages/Products.html" class="hotButton">Compra</a>
-      <a href="./pages/Contact.html" class="hotButton">Venta</a>
-    </div>
-  </section>
-  <!-- Section 3 -->
-
 
 
   <!-- After content Banner -->
   <div class="after-banner">
     <div class="blur-effect"></div>
-    <div class="form-container" data-aos="fade-right" data-aos-easing="ease-in-out" data-aos-duration="800"
-      data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
+    <div class="form-container">
       <div class="signup">
         <img class="img-form" src="/images/car-agency.jpg" alt="Suscribirse! for amazing updates!">
         <h4>Matenete al dia con las ultimas novedades</h4>
@@ -161,7 +255,6 @@
 
   </div>
   <!-- After content Banner -->
-
   <!-- Footer -->
   <footer>
     <div class="footer-top-level">
@@ -209,12 +302,10 @@
         <span>Copyright ©2023, Leon Car.
           Todos los derechos reservados.</span>
         <span>Desarrollado por <a href="https://www.giorgioruanova.com/" target="bla
-    ">Giorgio Ruanova</a></span>
+  ">Giorgio Ruanova</a></span>
       </div>
     </div>
   </footer>
-
-
 
   <a href="https://web.whatsapp.com/" class="whapp-fixed" target="_blank">
     <svg xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +314,8 @@
         d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
     </svg>
   </a>
-  <script type="module" src="/main.js"></script>
+
+  <script type="module" src="../main.js"></script>
 </body>
 
 </html>

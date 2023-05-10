@@ -6,6 +6,7 @@
     border: 2px solid $liveColor;
     box-shadow: 4px 3px 5px -3px #605e5e;
     transition: $deafaultTransition;
+    padding-bottom: 30px;
 
     &:hover {
         box-shadow: 4px 3px 5px 0px #605e5e;

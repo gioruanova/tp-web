@@ -3,7 +3,7 @@ import '/sass/main.scss'
 import $ from "jquery";
 // import './styles.css'
 
-import widget_a from './js/widgets/widget_a.js'
+import CarListingWidget from './js/widgets/CarListingWidget.js'
 import widget_b from './js/widgets/widget_b.js'
 import widget_c from './js/widgets/widget_c.js'
 import widget_d from './js/widgets/widget_d.js'
@@ -20,7 +20,7 @@ import 'animate.css';
 
 if (window.location.pathname === '/') {
     $(document).ready(function () {
-        widget_a();
+        CarListingWidget();
         widget_b();
         widget_c();
         widget_d();

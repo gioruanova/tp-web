@@ -122,27 +122,27 @@ h6 {
 
 
 h1 {
-    font-size: clamp(1.80rem, calc(1.41rem + 1.39vw), $h1-fontsize);
+    font-size: 30px;
     font-weight: $headingFontWeight;
 }
 
 h2 {
-    font-size: clamp(1.60rem, calc(1.33rem + 0.96vw), $h2-fontsize);
+    font-size: 28px;
     font-weight: $headingFontWeight;
 }
 
 h3 {
-    font-size: clamp(1.42rem, calc(1.25rem + 0.62vw), $h3-fontsize);
+    font-size: 25px;
     font-weight: $headingFontWeight;
 }
 
 h4 {
-    font-size: clamp(1.27rem, calc(1.17rem + 0.35vw), 1.44rem);
+    font-size: 23px;
     font-weight: $headingFontWeight;
 }
 
 h5 {
-    font-size: clamp(1.13rem, calc(1.08rem + 0.15vw), 1.20rem);
+    font-size: 20px;
     font-weight: $headingFontWeight;
 }
 
