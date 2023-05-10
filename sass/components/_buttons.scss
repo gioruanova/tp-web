@@ -25,7 +25,9 @@
 }
 
 .hotButton {
-    width: 10rem;
+    // width: 10rem;
+    max-width: 220px;
+    width: 100%;
     padding: 8px 20px;
     border-radius: 10px;
     font-weight: 500;

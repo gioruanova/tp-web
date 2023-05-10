@@ -55,6 +55,11 @@
                 font-weight: 500;
             }
 
+            &:focus-visible {
+                outline: none;
+                box-shadow: 4px 3px 3px -1px #9aa6c9;
+            }
+
             &:focus::placeholder {
                 color: $white;
             }
@@ -80,6 +85,10 @@
         height: 25px;
         border: none;
         border-radius: 5px;
+        &:focus-visible {
+            outline: none;
+            box-shadow: 4px 3px 3px -1px #9aa6c9;
+        }
     }
 
     .button {
@@ -100,6 +109,11 @@
         input {
             width: auto;
             margin-right: 10px;
+
+            &:focus-visible {
+                outline: none;
+                box-shadow: 4px 3px 3px -1px #9aa6c9;
+            }
         }
 
         span {
@@ -135,17 +149,32 @@
         height: 25px;
         border: none;
         border-radius: 5px;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: 4px 3px 3px -1px #9aa6c9;
+        }
     }
 
     textarea {
         resize: none;
         height: 100px;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: 4px 3px 3px -1px #9aa6c9;
+        }
     }
 
     select,
     option {
         border: none;
         border-radius: 5px;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: 4px 3px 3px -1px #9aa6c9;
+        }
     }
 
     .button {
@@ -167,6 +196,11 @@
         input {
             width: auto;
             margin-right: 10px;
+
+            &:focus-visible {
+                outline: none;
+                box-shadow: 4px 3px 3px -1px #9aa6c9;
+            }
         }
 
         span {

@@ -21,7 +21,7 @@
 
 
     .card-content {
-        margin: 5px 10px 20px 10px;
+        margin: 20px 10px 20px 10px;
     }
 
     .content-top {
@@ -51,12 +51,33 @@
     max-width: 900px;
     display: flex;
     align-items: center;
+    padding-bottom: 0;
+
+    .card-content {
+        margin: 0;
+        margin-left: 20px;
+
+        @media screen and (max-width:800px) {
+            margin-left: 0;
+            margin: 20px 0;
+        }
+    }
+
+    .img-card {
+        width: 60%;
+
+        @media screen and (max-width:800px) {
+            width: 100%;
+        }
+    }
+
 
     @media screen and (max-width:800px) {
         flex-direction: column;
 
         .card-content {
             width: 100%;
+
 
             .content-top {
                 text-align: center;
@@ -71,5 +92,78 @@
 
     .card-content {
         max-width: 300px;
+    }
+}
+
+.car-detail {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+    .car-description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid $liveColor;
+        box-shadow: 4px 3px 5px -3px #605e5e;
+        transition: $deafaultTransition;
+        border-radius: 10px;
+        max-width: 800px;
+        width: 100%;
+
+        @media screen and (max-width:650px) {
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        &:hover {
+            box-shadow: 4px 3px 5px 0px #605e5e;
+            transition: $deafaultTransition;
+        }
+
+
+        img {
+            border-radius: 10px 0 0 10px;
+            width: 60%;
+            height: 250px;
+            object-fit: cover;
+
+            @media screen and (max-width:650px) {
+                width: 100%;
+                height: auto;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        .card-content-bottom {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0 20px;
+            text-align: left;
+            width: 35%;
+
+            @media screen and (max-width:650px) {
+                text-align: center;
+                align-items: center;
+                width: 100%;
+                padding: 10px 0;
+            }
+
+            .card-content {
+                margin-bottom: 30px;
+
+                @media screen and (max-width:650px) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            .button {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
     }
 }

@@ -97,10 +97,8 @@ body.lightMode {
     margin-bottom: 5rem;
     min-height: 13rem;
 
-
     @media screen and (max-width: 700px) {
         padding-top: 6rem;
-
     }
 
     h1 {
@@ -114,6 +112,10 @@ body.lightMode {
     }
 
     .alignmentCenter {
+        text-align: center;
+    }
+
+    #title-to-fill {
         text-align: center;
     }
 }
@@ -185,10 +187,22 @@ body.lightMode {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 1rem auto;
+
+    @media screen and (max-width:1060px) {
+        justify-content: center;
+    }
 }
+
+.center-alignment {
+    @media screen and (max-width:1200px) {
+        justify-content: center;
+    }
+}
+
+
 
 .specialMargin {
     margin: 2rem 0;
@@ -344,6 +358,6 @@ body.lightMode {
     }
 }
 
-.video-class{
+.video-class {
     width: 100%;
 }
