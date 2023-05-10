@@ -274,6 +274,7 @@ body.lightMode {
             width: 100%;
             height: auto;
             border-radius: 5px;
+            object-fit: cover;
         }
 
         @media screen and (max-width:980px) {
@@ -324,6 +325,7 @@ body.lightMode {
     .vintageImage {
         img {
             filter: sepia(0.5);
+            object-fit: cover;
         }
     }
 
@@ -336,7 +338,7 @@ body.lightMode {
 
     .premiosSection {
         margin-top: 5rem;
-        width: 80%;
+        width: 90%;
         margin: auto;
 
         @media screen and (max-width:980px) {

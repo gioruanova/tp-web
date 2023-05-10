@@ -1,0 +1,21 @@
+.redes {
+    margin: 10px 0;
+
+    a {
+        border-radius: 100%;
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    svg {
+        fill: $white;
+        width: 30px;
+        height: 30px;
+        transition: $deafaultTransition;
+
+        &:hover {
+            fill: lighten($liveColor, 30%);
+            transition: $deafaultTransition;
+        }
+    }
+}

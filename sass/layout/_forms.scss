@@ -85,6 +85,7 @@
         height: 25px;
         border: none;
         border-radius: 5px;
+
         &:focus-visible {
             outline: none;
             box-shadow: 4px 3px 3px -1px #9aa6c9;
@@ -215,5 +216,23 @@
 
     h2 {
         font-size: 20px;
+    }
+}
+
+.form-footer {
+    margin-top: 1rem;
+
+    .redes {
+        svg {
+            .lightMode & {
+                fill: $liveColor;
+
+                &:hover {
+                    transition: $deafaultTransition;
+                    fill: darken($liveColor, 15%);
+                }
+            }
+
+        }
     }
 }
