@@ -57,7 +57,7 @@
 
             &:focus-visible {
                 outline: none;
-                box-shadow: 4px 3px 3px -1px #9aa6c9;
+                box-shadow: 4px 3px 3px -1px $shadowColor2;
             }
 
             &:focus::placeholder {

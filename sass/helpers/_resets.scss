@@ -13,7 +13,7 @@
         right: 25px;
         transform: rotate(15deg);
         bottom: 25px;
-        filter: drop-shadow(2px 2px 5px gray);
+        filter: drop-shadow(2px 2px 5px $shadowColor);
     }
 
     svg {

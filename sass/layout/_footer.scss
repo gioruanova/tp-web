@@ -92,12 +92,19 @@ footer {
             margin: auto;
             justify-content: center;
 
+            span {
+                &:nth-child(2) {
+                    margin-left: 5px;
+                }
+            }
+
             @media screen and (max-width:730px) {
                 flex-direction: column;
 
                 span {
                     &:nth-child(2) {
-                        margin-top: 20px;
+                        margin-top: 10px;
+                        margin-left: 0;
                     }
                 }
             }
