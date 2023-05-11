@@ -13,6 +13,11 @@
     color: $white;
     overflow: hidden;
 
+    .lightMode & {
+        color: $white;
+    }
+
+
     .class-logo {
         animation: mymove 5s infinite;
     }
@@ -38,6 +43,10 @@
     z-index: 9999;
     color: $white;
     overflow: hidden;
+
+    .lightMode & {
+        color: $white;
+    }
 
     .blur-effect {
         background: transparent;

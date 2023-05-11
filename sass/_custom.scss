@@ -1,0 +1,20 @@
+html {
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $darkBgColorAlternative;
+        border-radius: 25px;
+    }
+
+    ::-webkit-scrollbar-track {
+
+        background: lighten($darkBgColor, 5%);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: lighten($darkBgColorAlternative, 10%);
+
+    }
+}
