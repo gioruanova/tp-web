@@ -25,6 +25,7 @@ if (window.location.pathname === '/') {
     // SPLASH PAGE-----
     setTimeout(function () {
       $("#splash").fadeOut("slow")
+      $('body').css('overflow', 'visible')
 
       setTimeout(function () {
         sessionStorage.setItem('visitedBefore', 'visited')
