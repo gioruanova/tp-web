@@ -13,8 +13,10 @@
     color: $white;
     overflow: hidden;
 
-    .lightMode & {
-        color: $white!important;
+    span {
+        .lightMode & {
+            color: $white !important;
+        }
     }
 
 
@@ -44,8 +46,11 @@
     color: $white;
     overflow: hidden;
 
-    .lightMode & {
-        color: $white!important;
+    span {
+
+        .lightMode & {
+            color: $white !important;
+        }
     }
 
     .blur-effect {
