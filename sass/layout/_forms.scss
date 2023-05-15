@@ -79,6 +79,7 @@
     flex-direction: column;
     max-width: 350px;
     margin: auto;
+  
 
     input {
         width: 99%;
@@ -119,6 +120,14 @@
 
         span {
             font-size: 15px;
+        }
+    }
+    @media screen and (max-width:400px){
+        max-width: 320px;
+        width: 95%;
+        margin: auto;
+        input,label,button{
+            width: auto;
         }
     }
 }
@@ -210,12 +219,30 @@
     }
 }
 
+.contact-form{
+    @media screen and (max-width:400px){
+        max-width: 320px;
+        width: 95%;
+        margin: auto;
+        input,label,button{
+            width: auto;
+        }
+    }
+}
 
 .new-user {
     padding-top: 2rem;
 
     h2 {
         font-size: 20px;
+    }
+    @media screen and (max-width:400px){
+        max-width: 320px;
+        width: 95%;
+        margin: auto;
+        input,label,button{
+            width: auto;
+        }
     }
 }
 
