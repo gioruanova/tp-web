@@ -159,6 +159,11 @@ body.lightMode {
 
     a {
         margin-bottom: 2rem;
+
+        @media screen and (max-width:500px) {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
     }
 
 
@@ -242,7 +247,8 @@ body.lightMode {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    @media screen and (max-width:425px){
+
+    @media screen and (max-width:425px) {
         flex-direction: column;
     }
 
@@ -387,5 +393,3 @@ body.lightMode {
         }
     }
 }
-
-
