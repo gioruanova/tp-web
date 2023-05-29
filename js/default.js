@@ -34,7 +34,7 @@ $(document).ready(function () {
             $('#theme-selector').removeClass('update')
             $('#theme-selector2').removeClass('update')
             localStorage.setItem('themeSelected', 'darkMode');
-            
+
         }
     })
 });
