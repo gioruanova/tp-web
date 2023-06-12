@@ -152,6 +152,13 @@ body.lightMode {
     text-align: center;
     border-bottom: 1px solid $lightBgColor;
 
+    @media screen and (max-width:600px) {
+        background-image: url("../images/banner-1-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     .lightMode & {
 
         border-bottom: 1px solid $darkBgColor;
@@ -173,24 +180,13 @@ body.lightMode {
 
 
     @media screen and (max-width:600px) {
-        height: 45vw;
+        height: 100vw;
         transition: $deafaultTransition;
         padding-top: 1rem;
 
         a {
             margin-bottom: 1rem;
         }
-    }
-}
-
-.middlePage {
-    background-image: url("../images/banner-2.jpg");
-    width: 100%;
-    height: 55vw;
-    border-bottom: 1px solid $lightBgColor;
-
-    .lightMode & {
-        border-bottom: 1px solid $darkBgColor;
     }
 }
 
